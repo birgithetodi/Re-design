@@ -1,0 +1,146 @@
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: #ffffff;
+        color: 227B87;
+    }
+
+    .logo {
+        background-image: url(https://my-kebab.choiceqr.com/);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 75px;
+        height: inherit;
+        width: 115px;
+        box-sizing: content-box;
+        margin: 0;
+        display: block;
+        font-style: italic;
+    }
+
+    nav a {
+        color: #227B87;
+        margin-left: 1rem;
+        text-decoration: none;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .hero {
+        background: #A7DFE6 ;
+        background-image: url(https://imageproxy.wolt.com/assets/6732147576049a21845775cb);
+       background-size: cover;
+        padding: 15rem 6rem;
+        text-align: center;
+        font-style: italic;
+    }
+
+    .section {
+        background: #A7DFE6 ;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem;
+        align-items: center;
+        font-style: italic;
+    }
+
+    .section:nth-child(even) {
+        background: #A7DFE6;
+    }
+
+    .section img {
+        max-width: 100%;
+        height: auto;
+        flex: 1 1 300px;
+    }
+
+    .section .text {
+        flex: 1 1 300px;
+        padding: 1rem;
+    }
+
+    footer {
+        background: #43A4B1;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+        .section {
+            flex-direction: column;
+        }
+    }
+
+
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #e9f6fa;
+        margin: 0;
+        padding: 40px;
+      }
+      
+      .container {
+        background: 43A4B1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      
+      .box {
+        background-color: white;
+        border-radius: 5px;
+        padding: 10px;
+        width: 300px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .social-box a {
+        color: #006d84;
+        text-decoration: none;
+        font-weight: bold;
+        font-style: italic;
+      }
+      
+      .social-box a:hover {
+        text-decoration: underline;
+      }
+      
+      .hours-box {
+        background-color: #43A4B1;
+        color: #000;
+        font-style: italic;
+      }
+      
+      .hours-box ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .map-placeholder {
+        background-color: #cfeff6;
+        height: 150px;
+        margin-top: 10px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #227B87;
+        font-style: italic;
+
+        .info-box {
+            color: 227B87;
+            font-style: italic;
+        }
+      }
