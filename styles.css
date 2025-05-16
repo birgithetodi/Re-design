@@ -18,11 +18,14 @@
         background-position: center;
         background-size: 75px;
         height: inherit;
-        width: 115px;
         box-sizing: content-box;
         margin: 0;
         display: block;
         font-style: italic;
+    }
+
+    .logo img {
+      width: 120px
     }
 
     nav a {
