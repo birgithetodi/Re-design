@@ -25,7 +25,7 @@
     }
 
     .logo img {
-      width: 120px
+      width: 120px;
     }
 
     nav a {
@@ -76,14 +76,6 @@
         padding: 1rem;
         font-style: italic;
     }
-
-    @media (max-width: 768px) {
-        .section {
-            flex-direction: column;
-        }
-    }
-
-
 
     body {
         font-family: 'Arial', sans-serif;
@@ -147,3 +139,48 @@
             font-style: italic;
         }
       }
+
+    /* Hamburger menu styles */
+    .menu-toggle {
+        /* make hamburger disapear by default (gets overridden on mobile) display: none; */
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+    }
+
+    nav {
+        display: flex;
+        gap: 1rem;
+    }
+
+    @media (max-width: 768px) {
+
+        /* makes Hamburger menu appear on mobile */
+        .menu-toggle {
+            display: flex;
+        }
+
+        /* this is how hamburger menu items look when they are opened on mobile*/
+        nav {
+            display: none;
+            flex-direction: column;
+            background-color: #fff;
+            position: absolute;
+            top: 160px;
+            right: 68px;
+            border: 1px solid #ccc;
+            padding: 1rem;
+        }
+
+        /* makes list items appear on mobile after clicking */
+        nav.active {
+            display: flex;
+        }
+    }
