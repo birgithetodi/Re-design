@@ -59,13 +59,10 @@
     }
 
     .section img {
-        max-width: 100%;
-        height: auto;
-        flex: 1 1 300px;
     }
 
     .section .text {
-        flex: 1 1 300px;
+        flex: 1px;
         padding: 1rem;
     }
 
@@ -317,7 +314,7 @@
 }
 
 .section .text {
-    max-width: 400px;
+    max-width: 420px;
 }
 
 .section:nth-child(odd) {
