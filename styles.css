@@ -373,3 +373,7 @@
 .gallery button:hover {
     background-color: #003f3f;
 }
+
+a.active {
+  text-decoration: underline;
+}
