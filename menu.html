@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My.Kebab Menü</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="MyKebablogo.png" alt="My Kebab logo">
+      </a>
+    </div>
+   <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="#footer">Menu</a>
+        <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <!-- MENU -->
+  <section class="menu-layout">
+    <!-- Vasakpoolne menüü -->
+    <aside class="menu-sidebar">
+      <h2>Menu:</h2>
+      <ul>
+        <li><button>Meal offers</button></li>
+        <li><button>Doner boxes</button></li>
+        <li><button>Kebab</button></li>
+        <li><button>Pita kebab</button></li>
+        <li><button>Roll kebab</button></li>
+        <li><button>My Quesadilla</button></li>
+        <li><button>Aasia köök</button></li>
+        <li><button>Kanatiivad</button></li>
+        <li><button>Laste eri</button></li>
+        <li><button>Kõrvalroad</button></li>
+        <li><button>Joogid</button></li>
+      </ul>
+    </aside>
+
+    <!-- Toidud -->
+    <div class="menu-content">
+      <div class="menu-item">
+        <img src="https://cdn-media.choiceqr.com/prod-eat-my-kebab/menu/thumbnail_lHFzQqb-xbkXHPG-NvAIDBF_N-W-k.webp" alt="">
+        <div class="item-info">
+          <h3>Meal # 1 COMBO</h3>
+          <p>Veise rullkebab / kanarullkebab + friikartulid + jook 0.33l</p>
+          <strong>11 EUR</strong>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://cdn-media.choiceqr.com/prod-eat-my-kebab/menu/thumbnail_jdFZIGq-MjZGhCC-cklIETl_C-q-H.webp" alt="">
+        <div class="item-info">
+          <h3>Meal # 2 COMBO</h3>
+          <p>Doner kebabi taldrik + jook 0.33 l</p>
+          <strong>11 EUR</strong>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://cdn-media.choiceqr.com/prod-eat-my-kebab/menu/thumbnail_CqlIDWQ-tzCFtUq-cYllSah_I-z-o.webp" alt="">
+        <div class="item-info">
+          <h3>Meal # 3 COMBO</h3>
+          <p>Pita + friikartulid + jook 330ml</p>
+          <strong>11 EUR</strong>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://cdn-media.choiceqr.com/prod-eat-my-kebab/menu/thumbnail_kDGtzzX-FFmlZPo-YFDrwxC_k-o-D.webp" alt="">
+        <div class="item-info">
+          <h3>Meal # 4 COMBO</h3>
+          <p>Veiseliha + kanapita + friikartulid</p>
+          <strong>Alates 18.50 EUR</strong>
+        </div>
+      </div>
+
+      <button class="more-button">Rohkem →</button>
+    </div>
+  </section>
+
+  <!-- Alumised kastid -->
+  <section class="bottom-actions">
+    <div class="action-box">Broneerimised<br>↓</div>
+    <div class="action-box">Päevapakkumised<br>Lõuna pakkumised<br>↓</div>
+    <div class="action-box">Soodused<br>↓</div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My.Kebab. All rights reserved.</p>
+  </footer>
+
+<!-- Hamburger menu toggle script -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

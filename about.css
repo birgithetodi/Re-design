@@ -1,0 +1,201 @@
+/* Reset ja üldine paigutus */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #43A4B1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 120px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #227B87;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+/* Sisu plokid */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #A7DFE6;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.section img {
+    width: 420px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.section .text {
+    max-width: 400px;
+}
+
+.section:nth-child(odd) {
+    background-color: #e0f3f6; /* helesinine taust */
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.section:nth-child(odd) .text p {
+    transform: rotate(-45deg);
+    background-color: #a6dce6;
+    padding: 40px;
+    border-radius: 20px;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Galerii */
+.gallery {
+    background-color: rgb(255, 255, 255);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Gallerii nupp */
+.gallery button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #138a8a;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gallery button:hover {
+    background-color: #003f3f;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #43A4B1;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav.active {
+        display: flex;
+    }
+}
+
+  /* Hamburger menu styles */
+    .menu-toggle {
+        /* make hamburger disapear by default (gets overridden on mobile) display: none; */
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+    }
+
+    nav {
+        display: flex;
+        gap: 1rem;
+    }
+
+    @media (max-width: 768px) {
+
+        /* makes Hamburger menu appear on mobile */
+        .menu-toggle {
+            display: flex;
+        }
+
+        /* this is how hamburger menu items look when they are opened on mobile*/
+        nav {
+            display: none;
+            flex-direction: column;
+            background-color: #fff;
+            position: absolute;
+            top: 160px;
+            right: 68px;
+            border: 1px solid #ccc;
+            padding: 1rem;
+        }
+
+        /* makes list items appear on mobile after clicking */
+        nav.active {
+            display: flex;
+        }
+    }

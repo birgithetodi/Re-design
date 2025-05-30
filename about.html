@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a class="" aria-label="" href="" target="_self">
+              <img src="MyKebablogo.png" alt="">
+            </a>
+        </div>
+
+        <!-- Hamburger icon for mobile -->
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="menu.html">Menu</a>
+            <nav>
+        </nav>
+    </header>
+
+    <!-- INFOSEKTSIOONID -->
+  <div class="section">
+    <div class="text">
+      <p>My.Kebab sai alguse 2018. aastal soovist tuua Eestimaa toidumaastikule midagi lihtsat, aga hingega tehtut. Väikesest pererestoranist on tänaseks kujunenud populaarne kohtumispaik, kus kohtuvad maitsed, inimesed ja soojus.
+
+Meie meeskonda kuuluvad pühendunud kokad ja teenindajad, kelle jaoks iga klient on kui külaline kodus. Meie töötajad panustavad igapäevaselt selleks, et iga eine oleks maitsev ja iga külaskäik meeldejääv.
+
+Toidumenüü põhineb värsketel koostisosadel ja ehtsatel retseptidel – alates käsitsi valmistatud kebabist kuni koduste salatite ja kastmeteni. Meie eripäraks on kiire teenindus ja ausad maitsed.
+
+Tule meile külla – My.Kebab ei ole ainult koht, kus süüa, vaid koht, kus olla.</p>
+    </div>
+    <img src="https://lh3.googleusercontent.com/p/AF1QipN6o440lcaFY0j2ho7I2b2jmrVSd6Z91wk-oJFo=s1360-w1360-h1020-rw" alt="Meeskond restoranis" />
+  </div>
+
+  <div class="section">
+    <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4noOr2RhFyfQOb5alMivNqPz6sUT6x_mkSgLvlvaKLbvFYhknY7iWb3K3a3qY9m-J1_O-c4dsLgKc9ZwT_BiTUVjFScRGRQGNwTSpM_sBadtWdPWDaC5Elkk3oDlDRVpgWQo3c1s=s1360-w1360-h1020-rw" alt="Kohvikusein ja lauad" />
+    <div class="text">
+      <h2>Hubane keskkond tervele perele! Meie kohvikus ootab teid sõbralik teenindus ja mõnus atmosfäär.
+      </h2>
+    </div>
+  </div>
+
+  <!-- GALERII -->
+  <section class="gallery">
+    <h2>Galerii</h2>
+    <div class="gallery-images">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqbI-TkJYI-6tntovCcEM5dLlgtgRAkMQS6QLm9lBt4CxBlRBv6m0BRuzuBY0gORf9-gvy35BwuIgOlgQpy0H7ornugJFKvp_kGaBwCy6fqE15mDVyUlR-SCiBWOnk30NCPOMfC_A=s1360-w1360-h1020-rw" alt="Söögikoht sees" />
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4npyDPZ-pUV8dRq_uTAQ7DPq_dWAVS1RdpxZjKHZCHro2oLxRYruqHAkt_dQv7VXwMMBh1XNVE4kMkPM3VJdlLo8JryRBaAXENzQzzymnn2NeLnqwUvVVJMrt-51MxnHvw7Vfwc=s1360-w1360-h1020-rw" alt="Majafoto väljast" />
+      <img src="https://lh3.googleusercontent.com/p/AF1QipPg-oM-8Amep3Inlw5F-vc8jSgwmmnA9H5SKF47=s1360-w1360-h1020-rw" alt="Kebab taldrikul" />
+    </div>
+    <button onclick="window.location.href='gallery.html'">Gallerii →</button>
+  </section>
+
+    <footer>
+        <p>&copy; 2025 Simple Website. All rights reserved.</p>
+    </footer>
+
+<!-- Hamburger menu toggle script -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
